@@ -1,0 +1,46 @@
+.nav-wrapper{
+    margin: 15px 0px;
+    float: left;
+    width: 100%;
+}
+.nav{
+    background: #2874f0;
+}
+.logo{
+    float: left;
+}
+.mobile{
+    color: #fff;
+}
+
+.shop{
+    color: #fbd30e;
+    margin-left: 5px;
+}
+
+.logo-text{
+    float: left;
+}
+
+.navitem {
+    color: #fff;
+    display: inline-block;
+    margin: 11px 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.navitem:hover{
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .nav-wrapper{
+        margin: 15px 30px;
+        float: left;
+        width: 89%;
+    }
+
+}
