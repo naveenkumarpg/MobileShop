@@ -2,4 +2,22 @@
     color: #fff;
     margin-top: 8px;
     float: right;
+    text-decoration: none;
 }
+
+.cart:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.badge {
+    font-size: 14px;
+    color: #fbd30e;
+    background-color: #000;
+    border-radius: 13px;
+    margin-left: 10px;
+}
+.cart-icon{
+    margin-right: 5px;
+    display: inline-block;
+}
+

@@ -1,5 +1,5 @@
 .nav-wrapper{
-    margin: 15px 0px;
+    margin: 8px 0px;
     float: left;
     width: 100%;
 }
@@ -26,8 +26,8 @@
     color: #fff;
     display: inline-block;
     margin: 11px 25px;
-    text-transform: uppercase;
     text-decoration: none;
+    border-bottom: 1px solid transparent;
 }
 .navitem:hover{
     color: #fff;

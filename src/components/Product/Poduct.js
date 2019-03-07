@@ -6,7 +6,9 @@ export default class Poduct extends Component {
     return (
         <div className="col-xs-6 col-sm-6 col-md-2">
             <div className="product-wrapper">
-              <img className="product-img" src="/images/apple-iphone-6-mq3e2hn-a-original-imaexfzbdzgctzrv.jpeg" alt="imae xfzbdzgctzrv" />
+              <a href="/ProductDetail" >
+                <img className="product-img" src="/images/apple-iphone-6-mq3e2hn-a-original-imaexfzbdzgctzrv.jpeg" alt="imae xfzbdzgctzrv" />
+              </a>
             </div>
             <div className="caption text-center">
               <p className="mobile-name">Mobile name</p>

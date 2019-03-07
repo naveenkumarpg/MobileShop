@@ -7,7 +7,9 @@ export default class Home extends Component {
     return (
       <div className="container">
         <div className="billboard">
-            <img src="/images/bb.jpg" width="100%" alt="BillboardImage"/>
+        <a href="/Productlist">
+          <img src="/images/bb.jpg" width="100%" alt="BillboardImage"/>
+        </a> 
         </div>
         
       </div>
