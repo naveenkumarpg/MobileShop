@@ -30,10 +30,10 @@ class App extends Component {
       <Router>
         <Fragment>
           <Switch>
-            <Route exact={true} path="/" component={Home} />
+            <Route exact={true} path="/" component={ProductList} />
             <Route exact={true} path="/Productlist" component={ProductList} />
             <Route exact={true} path="/cartlist" component={CartList} />
-            <Route exact={true} path="/ProductDetail" component={ProductDetail} />
+            <Route exact={true} path="/ProductDetail/:id" component={ProductDetail} />
             <Route path="*" component={ErrorPage} />
           </Switch>
         </Fragment>

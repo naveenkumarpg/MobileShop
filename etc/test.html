@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        let mobiles = [
+    {
+        "img": "asus-zenfone-max-pro-m2-zb630kl-4j006in-original-imafd9gntqcryghb.jpeg",
+        "name": "Asus Zenfone Max Pro M2",
+        "config": "Upto 6GB RAM|64GB ROM",
+        "price": "From ₹9,999"
+    },
+    {
+        "img": "mi-redmi-e7t-na-original-imafazxdh2bd6hep.jpeg",
+        "name": "Redmi Note 6 Pro",
+        "config": "Upto 6GB RAM|64GB ROM",
+        "price": "From ₹13,999"
+    },
+    {
+        "img": "asus-zenfone-max-m2-zb632kl-4d005in-original-imafbcafbyehstsx.jpeg",
+        "name": "Asus Zenfone Max M2",
+        "config": "Upto 4GB RAM|64GB ROM",
+        "price": "From ₹8,499"
+    },
+    {
+        "img": "honor-9n-lld-al20-original-imafcysuqxfgvknv.jpeg",
+        "name": "Honor 9N",
+        "config": "13MP+2MP |16MP Camera",
+        "price": "From ₹8,999"
+    },
+    {
+        "img": "realme-2-pro-rmx1801-original-imaf9cu2przq9g8z.jpeg",
+        "name": "Realme 2 Pro",
+        "config": "3500 mAh Battery",
+        "price": "From ₹12,990"
+    },
+    {
+        "img": "nokia-5-1-plus-ta-1102-ds-original-imaf9jzhhmfm78d9.jpeg",
+        "name": "Nokia 5.1 Plus ",
+        "config": "13MP+5MP | 8MP Camera",
+        "price": "Now ₹9,999"
+    },
+    {
+        "img": "realme-2-rmx805-original-imaf8hxyjcncbxpw.jpeg",
+        "name": "Realme 2 (Diamond Black, 32 GB)",
+        "config": "Upto 4GB RAM|64GB ROM",
+        "price": "Now ₹9499"
+    },
+    {
+        "img": "google-pixel-3-na-original-imaf9sxrrrgzhf44.jpeg",
+        "name": "Google Pixel 3",
+        "config": "5.5\" FHD+ Display",
+        "price": "From ₹59,999"
+    },
+    {
+        "img": "mi-redmi-6-na-original-imaf9gmdbuyhkwkw.jpeg",
+        "name": "Redmi 6",
+        "config": "From ₹7,999",
+        "price": "12MP+5MP|5MP Camera"
+    },
+    {
+        "img": "samsung-galaxy-s10-sm-g973fzkdins-original-imafdys4755vhhfj.jpeg",
+        "name": "Samsung S10 Series",
+        "config": "Infinity-O Display",
+        "price": "From ₹55,900"
+    },
+    {
+        "img": "infinix-smart-2-x5515i-original-imafamj8teesvc3m.jpeg",
+        "name": "Infinix  Smart 2",
+        "config": "13MP | 8MP Camera",
+        "price": "From ₹6,999"
+    },
+    {
+        "img": "asus-zenfone-max-pro-m1-zb601kl-4d102in-original-imaf7hajxvhhkckh.jpeg",
+        "name": "Asus Zenfone Max Pro M1 ",
+        "config": "Upto 16MP+5MP Camera",
+        "price": "From ₹8,499"
+    },
+    {
+        "img": "motorola-moto-one-power-na-original-imaf97rzgvpbt4um.jpeg",
+        "name": "Motorola One Power (Black, 64 GB)",
+        "config": "4 GB RAM | 64 GB ROM",
+        "price": "Now ₹13999"
+    },
+    {
+        "img": "redmi-note-5-pro-mzb6084in-original-imaf2g8zj6y5vkqn.jpeg",
+        "name": " Redmi Note 5 Pro ",
+        "config": "12MP +5MP|20MP Camera",
+        "price": "From ₹12,999"
+    },
+    {
+        "img": "xiaomi-pocophone-f1-na-original-imaf8afgrdbqtsta.jpeg",
+        "name": " POCO F1 ",
+        "config": "Upto 6 GB | 128 GB",
+        "price": "From ₹19,999"
+    },
+    {
+        "img": "honor-7s-na-original-imaf8zwgzmjszkge.jpeg",
+        "name": "Honor 7s",
+        "config": "13 MP | 5 MP Camera",
+        "price": "From ₹5,999"
+    },
+    {
+        "img": "apple-iphone-6-mq3e2hn-a-original-imaexfzbdzgctzrv.jpeg",
+        "name": "Apple iPhone 6 (32 GB)",
+        "config": "4.7\"Retina HD Display",
+        "price": "From ₹22,999"
+    },
+    {
+        "img": "infinix-note-5-x604-original-imaf8bdc6wkzc2v5.jpeg",
+        "name": "Infinix Note 5 ",
+        "config": "3 GB RAM | 32 GB ROM ",
+        "price": "From ₹8,999"
+    },
+    {
+        "img": "vivo-v9-pro-1851-original-imafabefzzp6gdde.jpeg",
+        "name": "Vivo V9 Pro",
+        "config": "4 GB RAM | 64 GB ROM",
+        "price": "Just ₹13,990"
+    },
+    {
+        "img": "asus-zenfone-5z-zs621kl-2h003in-zs621kl-2h013in-original-imaf6rn9vgzfh7cd.jpeg",
+        "name": "Asus Zenfone 5Z ",
+        "config": "Upto 8 GB | 256 GB",
+        "price": "From ₹24,999"
+    },
+    {
+        "img": "mi-redmi-note-7-na-original-imafe48ru3s66sjd.jpeg",
+        "name": "Redmi Note 7",
+        "config": "From ₹9,999",
+        "price": "4000 mAh Battery"
+    },
+    {
+        "img": "google-pixel-3-xl-na-original-imaf9szfhubfgdgn.jpeg",
+        "name": "Google Pixel 3 XL",
+        "config": "6.3\" QHD+ Display",
+        "price": "From ₹63,999"
+    },
+    {
+        "img": "samsung-galaxy-on6-sm-j600gf-original-imaf6j6zhqa3yfvz.jpeg",
+        "name": "Samsung Galaxy On6",
+        "config": "4 GB RAM | 64 GB ROM",
+        "price": "Now ₹9,990"
+    },
+    {
+        "img": "vivo-v15-pro-1818-pd1832f-ex-original-imafdj59tvmuffyg.jpeg",
+        "name": "Vivo V15 Pro",
+        "config": "6 GB RAM | 128 GB ROM",
+        "price": "Now ₹ 28,990"
+    },
+    {
+        "img": "honor-h10-lite-na-original-imafcskm8qygbqpd.jpeg",
+        "name": "Honor 10 Lite",
+        "config": "Upto 6GB RAM|64GB ROM",
+        "price": "From ₹13,999"
+    },
+    {
+        "img": "lenovo-k9-padv0031cn-original-imafayegk6nxqtjr.jpeg",
+        "name": "Lenovo K9",
+        "config": "3 GB RAM | 32 GB ROM",
+        "price": "Just ₹8,999"
+    },
+    {
+        "img": "nokia-6-1-plus-na-original-imaf892edytmjfgg.jpeg",
+        "name": " Nokia 6.1 Plus (4GB, 64 GB) ",
+        "config": "16MP+5MP Rear Camera",
+        "price": "Now ₹15,999"
+    },
+    {
+        "img": "honor-7a-v100r001-aum-al20-original-imaf5h4anxwhmqb4.jpeg",
+        "name": "Honor 7A",
+        "config": "13MP+2MP | 8MP Camera",
+        "price": "Now ₹7,999"
+    },
+    {
+        "img": "realme-c1-na-original-imafcvnt4mtzyq2d.jpeg",
+        "name": "Realme C1(2019)",
+        "config": "6.2\" Notch Display",
+        "price": "From ₹7,499"
+    },
+    {
+        "img": "yu-ace-5014-original-imaf8k6y6x3rj9hq.jpeg",
+        "name": "Yu Ace (2 GB)",
+        "config": "4000 mAh Battery",
+        "price": "Now ₹5,999"
+    },
+    {
+        "img": "mi-redmi-note-7-na-original-imafe48ru3s66sjd.jpeg",
+        "name": "Redmi Note 7",
+        "config": "From ₹9,999",
+        "price": "Upto 4GB RAM|64GB ROM"
+    },
+    {
+        "img": "mi-redmi-note-7-pro-na-original-imafe4b62yeycjfq.jpeg",
+        "name": "Redmi Note 7 Pro",
+        "config": "From ₹13,999",
+        "price": "48MP+5MP|13MP Camera"
+    },
+    {
+        "img": "vivo-v15-pro-1818-pd1832f-ex-original-imafdj59tvmuffyg.jpeg",
+        "name": "Vivo V15 Pro",
+        "config": "6 GB RAM | 128 GB ROM",
+        "price": "Now ₹ 28,990"
+    },
+    {
+        "img": "oppo-k1-cph1893-original-imafdgxvmqwufx7d.jpeg",
+        "name": "OPPO K1",
+        "config": "16MP+2MP| 25MP Camera",
+        "price": "Just ₹16,990"
+    },
+    {
+        "img": "honor-h10-lite-na-original-imafcskm8qygbqpd.jpeg",
+        "name": "Honor 10 Lite",
+        "config": "Upto 6GB RAM|64GB ROM",
+        "price": "From ₹13,999"
+    },
+    {
+        "img": "asus-zenfone-max-pro-m2-zb630kl-4j006in-original-imafd9gntqcryghb.jpeg",
+        "name": "Asus Zenfone Max Pro M2",
+        "config": "5000 mAh Battery",
+        "price": "From ₹9,999"
+    },
+    {
+        "img": "mi-redmi-e7t-na-original-imafazxdh2bd6hep.jpeg",
+        "name": "Redmi Note 6 Pro",
+        "config": "12MP+5MP | 20MP+2MP ",
+        "price": "From ₹13,999"
+    },
+    {
+        "img": "samsung-galaxy-a9-sm-a920fzidins-original-imafamrz5nfqueu6.jpeg",
+        "name": "Samsung Galaxy A9",
+        "config": "1st Rear Quad Camera",
+        "price": "From ₹30,990"
+    },
+    {
+        "img": "lenovo-a5-padj0040cn-original-imafaycjjekkx5fg.jpeg",
+        "name": "Lenovo A5",
+        "config": "4000 mAh Battery",
+        "price": "From ₹5,999"
+    },
+    {
+        "img": "asus-zenfone-lite-l1-za551kl-4a021in-original-imafafe3qwqkg4sv.jpeg",
+        "name": "Asus ZenFone Lite L1 (Black, 16 GB)",
+        "config": "13MP | 5MP Camera",
+        "price": "Now ₹5999"
+    },
+    {
+        "img": "vivo-v9-pro-1851-original-imafabefzzp6gdde.jpeg",
+        "name": "Vivo V9 Pro",
+        "config": "13MP+2MP|16MP Camera",
+        "price": "Just ₹13,990"
+    },
+    {
+        "img": "infinix-hot-s3x-x622-original-imafanrffzhywymz.jpeg",
+        "name": "Infinix Hot S3x",
+        "config": "4000 mAh Battery",
+        "price": "Just ₹9,999"
+    },
+    {
+        "img": "vivo-v11-pro-1804-1814-original-imaf8ru5zqgwvg5s.jpeg",
+        "name": "Vivo V11 Pro",
+        "config": "Now ₹23,990",
+        "price": "12MP+5MP | 25MP Camera"
+    },
+    {
+        "img": "asus-zenfone-max-m1-zb556kl-4g002in-original-imafafe4fs7gyjnf.jpeg",
+        "name": "Asus Zenfone Max M1",
+        "config": "4000 mAh Battery",
+        "price": "Just ₹7,499"
+    },
+    {
+        "img": "samsung-galaxy-a7-sm-a750fzbhins-original-imaf9d35cv5anzqw.jpeg",
+        "name": "Samsung A7",
+        "config": "4 GB RAM | 64 GB ROM",
+        "price": "From ₹18,990"
+    },
+    {
+        "img": "asus-zenfone-max-m2-zb632kl-4d005in-original-imafbcafbyehstsx.jpeg",
+        "name": "Asus Zenfone Max M2",
+        "config": "4000 mAh Battery",
+        "price": "From ₹8,499"
+    },
+    {
+        "img": "samsung-galaxy-s10-sm-g973fzkdins-original-imafdys4755vhhfj.jpeg",
+        "name": "Samsung S10 Series",
+        "config": "Infinity-O Display",
+        "price": "From ₹55,900"
+    },
+    {
+        "img": "google-pixel-3-xl-na-original-imaf9szfhubfgdgn.jpeg",
+        "name": "Google Pixel 3 XL",
+        "config": "Upto 4GB RAM|128GBROM",
+        "price": "From ₹63,999"
+    },
+    {
+        "img": "google-pixel-3-na-original-imaf9sxrrrgzhf44.jpeg",
+        "name": "Google Pixel 3",
+        "config": "Upto 4GB RAM|128GBROM",
+        "price": "From ₹59,999"
+    },
+    {
+        "img": "vivo-v11-pd1813f-ex-vivo-1806-original-imaf9cy8fzaugf9k.jpeg",
+        "name": "Vivo V11",
+        "config": "16MP+5MP |25MP Camera",
+        "price": "Now ₹19,990"
+    },
+    {
+        "img": "apple-iphone-xs-max-mt542hn-a-original-imaf97f6n9eg9be4.jpeg",
+        "name": "iPhone XS and XS Max",
+        "config": "12MP+12MP|7MP Camera ",
+        "price": "From ₹99,990"
+    },
+    {
+        "img": "infinix-note-5-stylus-x605-original-imafb6r4gu52qgw3.jpeg",
+        "name": "Infinix Note 5 Stylus",
+        "config": "Intelligent X-pen",
+        "price": "Just ₹16,999"
+    },
+    {
+        "img": "realme-c1-na-original-imafcvntdhsc66wb.jpeg",
+        "name": "Realme C1 (2019)",
+        "config": "13MP+2MP | 5MP Camera",
+        "price": "From ₹7,499"
+    },
+    {
+        "img": "kult-impulse-kt05-impulse-kt05-original-imafd4weay6zdvba.jpeg",
+        "name": "Kult Impulse (Black, 32 GB)",
+        "config": "3GB | 4000 mAH",
+        "price": "Now ₹6999"
+    },
+    {
+        "img": "lenovo-k8-note-xt-1902-3-original-imafcsgm7vfzwggj.jpeg",
+        "name": "Lenovo K8 Note 4GB",
+        "config": "4GB | 4000mAh",
+        "price": "₹9200 or lower"
+    },
+    {
+        "img": "mi-redmi-y2-y2-original-imaf9vyzpfsvchmp.jpeg",
+        "name": "Redmi Y2 4GB",
+        "config": "4GB | 3080mAh",
+        "price": "Rs 12380 or lower"
+    },
+    {
+        "img": "blackberry-evolve-evolve-original-imafdwtyqvvsfynd.jpeg",
+        "name": "Blackberry Evolve (Black, 64 GB)",
+        "config": "4GB | 64GB | 4000 mAH",
+        "price": "Now ₹19999"
+    },
+    {
+        "img": "mi-redmi-5-na-original-imaf4gh6qhrdebfg.jpeg",
+        "name": "Redmi 5 (Gold, 64 GB)",
+        "config": "4GB | 3300mAh",
+        "price": "Now ₹11790"
+    },
+    {
+        "img": "mi-a2-na-original-imaf9c7j9k2ygcby.jpeg",
+        "name": "Mi A2 (Blue/Lake Blue, 64 GB)",
+        "config": "4GB | 3010mAh",
+        "price": "Now ₹14298"
+    },
+    {
+        "img": "motorola-moto-c-plus-xt1721-original-imaeup4xck2gdxzj.jpeg",
+        "name": "Moto C Plus",
+        "config": "2GB | 4000mAh",
+        "price": "₹6999 or lower"
+    },
+    {
+        "img": "mi-mi-a1-na-original-imaexg9z4fmxk8ns.jpeg",
+        "name": "Mi A1",
+        "config": "4GB | 3080mAh",
+        "price": "₹14500 or lower"
+    },
+    {
+        "img": "infocus-vision-3-vision-3-original-imaf9ryfazesfzz5.jpeg",
+        "name": "InFocus Vision 3 2GB",
+        "config": "2GB | 4000mAh",
+        "price": "₹6590 or lower"
+    },
+    {
+        "img": "nokia-6-1-na-original-imaf5zvb9x4f4kjb.jpeg",
+        "name": "Nokia 6.1 4GB",
+        "config": "Extra Rs 815 Off!",
+        "price": "Rs 15440 or lower"
+    },
+    {
+        "img": "nokia-6-1-na-original-imaf5g8suxh3qf6k.jpeg",
+        "name": "Nokia 6.1 3GB",
+        "config": "Extra Rs 675 Off!",
+        "price": "Rs 12824 or lower"
+    },
+    {
+        "img": "nokia-3-1-1070-original-imaf7jpdesagzmwu.jpeg",
+        "name": "Nokia 3.1 (Black, 16 GB)",
+        "config": "Extra ₹510 Off!",
+        "price": ""
+    },
+    {
+        "img": "infocus-a2-a2-original-imaf9fw8mddvzann.jpeg",
+        "name": "Infocus A2 1GB",
+        "config": "Extra ₹1500 Off!",
+        "price": "₹3999 or lower"
+    },
+    {
+        "img": "mi-redmi-6a-redmi-6a-original-imafaf8cg5gwwms8.jpeg",
+        "name": "Redmi 6A (Black, 32 GB)",
+        "config": "2GB |3000mAh",
+        "price": ""
+    },
+    {
+        "img": "mi-redmi-5-na-original-imaf5semqnagymyq.jpeg",
+        "name": "Redmi 5 3GB",
+        "config": "3GB | 3300mAh",
+        "price": "₹9999 or lower"
+    },
+    {
+        "img": "honor-7x-bnd-al10-original-imaffrt4pbnh6hbf.jpeg",
+        "name": "Honor 7X (Blue, 32 GB)",
+        "config": "Extra ₹640 Off!",
+        "price": ""
+    },
+    {
+        "img": "vivo-y69-pd1705-original-imaewxd4q8vy87gr.jpeg",
+        "name": "Vivo Y69",
+        "config": "Extra Rs 600 Off!",
+        "price": "Rs 11390 or lower"
+    },
+    {
+        "img": "motorola-moto-g5s-na-original-imaf27g3rjaewhcn.jpeg",
+        "name": "Moto G5s",
+        "config": "Extra Rs 550 Off!",
+        "price": "Rs 10360 or lower"
+    },
+    {
+        "img": "nokia-2-1-2-1-original-imaf82gjafttxzqh.jpeg",
+        "name": "Nokia 2.1",
+        "config": "Extra ₹350 Off!",
+        "price": "₹6750 or lower"
+    },
+    {
+        "img": "kenxinda-r6-r6-original-imaffgpfsugufyt7.jpeg",
+        "name": "Kenxinda R6 (Iron Grey, 16 GB)",
+        "config": "Extra ₹1000 Off!",
+        "price": ""
+    },
+    {
+        "img": "infocus-snap-4-if9003-original-imaf6sucnmhfshhe.jpeg",
+        "name": "InFocus Snap 4",
+        "config": "Extra Rs 150 Off!",
+        "price": "₹7469 or lower"
+    },
+    {
+        "img": "karbonn-a9-indian-4g-volte-a9-indian-4g-volte-original-imaf2p9uwqgrxrzs.jpeg",
+        "name": "Karbonn A9 Indian 4G VoLTE (White & Champagne, 8 GB)",
+        "config": "Extra Rs 62 Off!",
+        "price": ""
+    },
+    {
+        "img": "infocus-turbo-5-plus-turbo-5-plus-original-imaf4vfry4fpstux.jpeg",
+        "name": "InFocus Turbo 5 Plus (Royal Gold, 32 GB)",
+        "config": "Extra ₹410 Off!",
+        "price": ""
+    },
+    {
+        "img": "nokia-3-1-3-1-original-imaf898yhf2jfamm.jpeg",
+        "name": "Nokia 3.1 (Black, 32 GB)",
+        "config": "Extra ₹540 Off!",
+        "price": ""
+    },
+    {
+        "img": "infocus-vision-3-if9031-original-imaf9ryfdzshdezn.jpeg",
+        "name": "InFocus Vision 3 (Midnight Black, 32 GB)",
+        "config": "3GB|8MP Front Camera",
+        "price": ""
+    },
+    {
+        "img": "nokia-7-1-ta-1097-original-imafbnjvpayqf8ga.jpeg",
+        "name": "Nokia 7.1 (Glossy Steel, 64 GB)",
+        "config": "4GB |3060mAh",
+        "price": ""
+    },
+    {
+        "img": "nokia-2-1-2-1-original-imaf82gjafttxzqh.jpeg",
+        "name": "Nokia 2.1 (Blue&Copper, 8 GB)",
+        "config": "1GB|4000 mAh",
+        "price": ""
+    },
+    {
+        "img": "mi-redmi-6a-redmi-6a-original-imafbv6guujwbz4z.jpeg",
+        "name": "Redmi 6A (Black, 16 GB)",
+        "config": "2GB |3000mAh",
+        "price": ""
+    },
+    {
+        "img": "lenovo-k8-note-xt1902-original-imaez9xxp6zfrjzg.jpeg",
+        "name": "Lenovo K8 Note 3GB",
+        "config": "3GB | 4000mAh",
+        "price": "₹8050 or lower"
+    },
+    {
+        "img": "mobiistar-x1-dual-x1-dual-original-imafa6464j8qfrrm.jpeg",
+        "name": "Mobiistar X1 Dual (Black, 32 GB)",
+        "config": "Rs 8900 or lower",
+        "price": ""
+    },
+    {
+        "img": "mi-6-pro-6-pro-original-imaf9hryrgkrfza5.jpeg",
+        "name": "Redmi 6 Pro (Black, 64 GB)",
+        "config": "4GB |4000mAh",
+        "price": ""
+    },
+    {
+        "img": "honor-7x-bnd-al10-original-imaffrt4pbnh6hbf.jpeg",
+        "name": "Honor 7X (Blue, 64 GB)",
+        "config": "Extra ₹750 Off!",
+        "price": ""
+    },
+    {
+        "img": "coolpad-note-6-note-6-original-imaf6gse2mzw8p5t.jpeg",
+        "name": "Coolpad Note 6 (Royal Gold, 64 GB)",
+        "config": "Extra ₹470 Off!",
+        "price": ""
+    },
+    {
+        "img": "motorola-moto-e5-moto-e5-original-imaf6h3gsxffyvej.jpeg",
+        "name": "Moto E5 (Grey/Flash Gray, 16 GB)",
+        "config": "2GB|13MP Rear Camera",
+        "price": ""
+    }
+];  
+    var newMobiles =[];
+    for (let i = 0; i < mobiles.length; i++) {
+        mobiles[i].unique = i
+        newMobiles.push(mobiles[i]);
+    }
+    console.log(JSON.stringify(newMobiles));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,6 +1,7 @@
 .product-wrapper{
     text-align: center;
     position: relative;
+    min-height: 210px;
 }
 .caption{
     margin-bottom: 40px;
@@ -12,7 +13,6 @@
     max-width: 60%;
     max-height: 100%;
 }
-
 .mobile-price{
     color: #388e3c;
 }
