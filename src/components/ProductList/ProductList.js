@@ -3,6 +3,7 @@ import React, { Component, Fragment } from 'react';
 import '../ProductList/ProductList.css';
 
 import Product from '../Product/Poduct';
+import Banner from '../Banner/Benner';
 
 export default class ProductList extends Component {
 
@@ -46,15 +47,7 @@ export default class ProductList extends Component {
   render() {
     return (
       <Fragment>
-        <div className="container">
-          <div className="billboard">
-          <a href="/Productlist">
-            <img src="/images/bb.jpg" width="100%" alt="BillboardImage"/>
-          </a> 
-          </div>
-          
-        </div>
-
+        <Banner></Banner>
         <div className="container">
           <h3 className="text-center">Mobile New Launches</h3> 
           <p className="disclaimer text-center">Showing {this.state.length} Items</p>
