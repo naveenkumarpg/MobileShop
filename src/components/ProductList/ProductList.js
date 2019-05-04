@@ -2,8 +2,10 @@ import React, { Component, Fragment } from 'react';
 
 import '../ProductList/ProductList.css';
 
-import Product from '../Product/Poduct';
+import Product from '../Product/Product';
 import Banner from '../Banner/Benner';
+
+import Labels from '../../Labels/labels';
 
 export default class ProductList extends Component {
 
@@ -20,7 +22,7 @@ export default class ProductList extends Component {
 
     const fetchPhonesData = new Promise(function(resolve,reject){
 
-      fetch('../../data/data.json').then((data) => {
+      fetch('http://localhost:3001/mobiles?_page=1&_limit=18').then((data) => {
         return data.json();
       }).then((data) =>{
         resolve(data);
@@ -49,8 +51,8 @@ export default class ProductList extends Component {
       <Fragment>
         <Banner></Banner>
         <div className="container">
-          <h3 className="text-center">Mobile New Launches</h3> 
-          <p className="disclaimer text-center">Showing {this.state.length} Items</p>
+          <h3 className="text-center">{Labels.MNL}</h3> 
+          <p className="disclaimer text-center">{Labels.showing} {this.state.length} {Labels.items}</p>
           <div className="separator"></div>
           <div className="row products">
             {this.renderPhones()}

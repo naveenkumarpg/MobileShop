@@ -6,7 +6,7 @@ export default class Poduct extends Component {
     return (
         <div className="col-xs-6 col-sm-6 col-md-2">
             <div className="product-wrapper">
-              <a href={'/ProductDetail/'+this.props.phone.unique}>
+              <a href={'/ProductDetail/'+this.props.phone.id}>
                 <img className="product-img" src={'/images/'+this.props.phone.img} alt="imae xfzbdzgctzrv" />
               </a>
             </div>

@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
+import renderHTML from 'react-render-html';
 
+import Labels from '../../Labels/labels';
 export default class extends Component {
     render(){
         return (
-            <div className="row">
-                <div className="container text-center">
-                    <div className="separator"></div>
-                    &copy; 2019 +Mobile shop
-                    <div className="separator"></div>
-                </div>
+            <div className="container text-center">
+                <div className="separator"></div>
+                { renderHTML (Labels.disclaimer) }
+                <div className="separator"></div>
             </div>
         )
     }
