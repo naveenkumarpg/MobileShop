@@ -11,15 +11,13 @@ export default class ProductList extends Component {
 
   constructor(props){
     super(props);
-    this.fetchPhones();
     this.state = {
       mobiles: [],
       length : 0
     };
   }
 
-  fetchPhones(){
-
+  componentDidMount(){
     const fetchPhonesData = new Promise(function(resolve,reject){
 
       fetch('http://localhost:3001/mobiles?_page=1&_limit=18').then((data) => {
@@ -35,17 +33,15 @@ export default class ProductList extends Component {
         length: data.length
       });
     });
-
   }
 
   renderPhones(){
-
     let HTML  = this.state.mobiles.map((item, index) => {
       return <Product phone={item} key={index} />
     });
-
     return HTML;
   }
+
   render() {
     return (
       <Fragment>

@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 
 export default class Edit extends Component {
+
   constructor(props){
     super(props);
     this.state = {
       mobile: null
     };
-    this.fetchData();
   }
-
-   fetchData(){
-        let url = "http://localhost:3001/mobiles/" + this.props.match.params.id;
+  
+  componentDidMount(){
+    let url = "http://localhost:3001/mobiles/" + this.props.match.params.id;
 
         const fetchPhonesData = new Promise(function(resolve,reject){
             fetch(url).then((data) => {
@@ -25,7 +25,8 @@ export default class Edit extends Component {
               mobile: data
             });
           });
-    }
+  }
+
   render() {
     return (
       <div className="container">
@@ -33,4 +34,5 @@ export default class Edit extends Component {
       </div>
     )
   }
+
 }
