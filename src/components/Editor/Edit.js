@@ -5,10 +5,10 @@ export default class Edit extends Component {
   constructor(props){
     super(props);
     this.state = {
-      mobile: null
+      mobile: {}
     };
   }
-  
+
   componentDidMount(){
     let url = "http://localhost:3001/mobiles/" + this.props.match.params.id;
 
@@ -19,7 +19,7 @@ export default class Edit extends Component {
               resolve(data);
             });
           });
-      
+
           fetchPhonesData.then((data) => {
             this.setState({
               mobile: data
@@ -30,9 +30,8 @@ export default class Edit extends Component {
   render() {
     return (
       <div className="container">
-        Edit Page
+
       </div>
     )
   }
-
 }
