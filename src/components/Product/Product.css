@@ -4,7 +4,7 @@
     min-height: 210px;
 }
 .caption{
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .mobile-name{
     margin-top: 20px;
@@ -15,4 +15,15 @@
 }
 .mobile-price{
     color: #388e3c;
+}
+.strike{
+    text-decoration: line-through;
+    color: red;
+    clear: both;
+    display: block;
+}
+.caption .cartbtn{
+    position: absolute;
+    bottom: 16px;
+    left: 38%;
 }

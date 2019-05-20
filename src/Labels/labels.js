@@ -7,5 +7,6 @@ export default {
     "PGF":"Page Not Found",
     "disclaimer":"&copy; 2019 +Mobile shop",
     "notfounddesc" : "Sorry, we couldn't find the page you were looking for. we suggest that you return to main section.",
-    "mainpage" : "Go to the Main Page"
+    "mainpage" : "Go to the Main Page",
+    "currencysymbol" : "₹"
   };
