@@ -1,18 +1,18 @@
-body{
-    font-family: 'Roboto Condensed', sans-serif;
+body {
+  font-family: "Roboto Condensed", sans-serif;
 }
-.separator{
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    margin: 20px 0px;
+.separator {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 20px 0px;
 }
 
-.hgap{
-    display: inline-block;
-    width: 100%;
-    height: 30px;
+.hgap {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
 }
-.vgap{
-    display: inline-block;
-    width: 20px;
-    height: 15px;
+.vgap {
+  display: inline-block;
+  width: 20px;
+  height: 15px;
 }

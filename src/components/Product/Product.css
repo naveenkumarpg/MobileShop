@@ -1,29 +1,29 @@
-.product-wrapper{
-    text-align: center;
-    position: relative;
-    min-height: 210px;
+.product-wrapper {
+  text-align: center;
+  position: relative;
+  min-height: 210px;
 }
-.caption{
-    margin-bottom: 60px;
+.caption {
+  margin-bottom: 60px;
 }
-.mobile-name{
-    margin-top: 20px;
+.mobile-name {
+  margin-top: 20px;
 }
-.product-img{
-    max-width: 60%;
-    max-height: 100%;
+.product-img {
+  max-width: 60%;
+  max-height: 100%;
 }
-.mobile-price{
-    color: #388e3c;
+.mobile-price {
+  color: #388e3c;
 }
-.strike{
-    text-decoration: line-through;
-    color: red;
-    clear: both;
-    display: block;
+.strike {
+  text-decoration: line-through;
+  color: red;
+  clear: both;
+  display: block;
 }
-.caption .cartbtn{
-    position: absolute;
-    bottom: 16px;
-    left: 38%;
+.caption .cartbtn {
+  position: absolute;
+  bottom: 16px;
+  left: 38%;
 }
