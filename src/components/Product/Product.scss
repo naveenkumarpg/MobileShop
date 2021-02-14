@@ -1,0 +1,32 @@
+.mobile-item {
+  margin-bottom: 24px;
+
+  .product-wrapper {
+    text-align: center;
+    position: relative;
+  }
+
+  .caption {
+    margin-bottom: 60px;
+  }
+
+  .mobile-name {
+    margin-top: 24px;
+  }
+
+  .product-img {
+    margin-bottom: 24px;
+    border: 1px solid #388e3c;
+  }
+
+  .mobile-price {
+    color: #388e3c;
+  }
+
+  .strike {
+    text-decoration: line-through;
+    color: red;
+    clear: both;
+    display: block;
+  }
+}

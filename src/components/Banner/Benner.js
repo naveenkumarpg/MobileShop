@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-
-import "../Banner/Banner.css";
+import "../Banner/Banner.scss";
 
 export default class Benner extends Component {
   render() {
     return (
-      <div className="container">
+      <section className="container">
         <div className="billboard">
           <a href="/Productlist">
             <img
@@ -15,7 +14,7 @@ export default class Benner extends Component {
             />
           </a>
         </div>
-      </div>
+      </section>
     );
   }
 }

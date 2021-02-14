@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 
-import "../Editor/Edit.css";
+import "../Editor/Edit.scss";
 
 class UserForm extends Component {
   constructor(props) {
@@ -77,17 +77,17 @@ class UserForm extends Component {
             isSubmitting,
             enableReinitialize,
           }) => (
-            <div className="formwrapper">
-              <Form>
-                <div className=" col-xs-6 col-sm-6 text-center">
+            <Form>
+              <div className="formwrapper row">
+                <div className="col-md-6 text-center">
                   <img
                     className="product-img"
-                    src={"/images/mobiles/" + values.img}
+                    src="https://dummyimage.com/300x500/f9f9f9/999.jpg"
                     alt="img"
                   />
                 </div>
 
-                <div className="col-xs-6 col-sm-6">
+                <div className="col-sm-6">
                   <div className="felwrap">
                     <label className="plabel">Phone Name : </label>
                     <Field
@@ -189,8 +189,8 @@ class UserForm extends Component {
                     </button>
                   </div>
                 </div>
-              </Form>
-            </div>
+              </div>
+            </Form>
           )}
         />
       </div>

@@ -1,39 +1,25 @@
 import React, { Component } from "react";
-import Labels from "../../Labels/labels";
-import renderHTML from "react-render-html";
-import "../Product/Product.css";
+import "../Product/Product.scss";
 
 export default class Poduct extends Component {
-  pricer(data) {
-    console.log(data);
-
-    if (data.oprice) {
-      let pricer = `<span className="strike">${Labels.currencysymbol} ${data.price}</span> <span className="acprice"> ${Labels.currencysymbol} ${data.oprice}</span>`;
-      return pricer;
-    } else {
-      return `${Labels.currencysymbol} ${data.price}`;
-    }
-  }
-
   render() {
+    console.log(this.props);
+
     return (
-      <div className="col-xs-6 col-sm-6 col-md-2">
+      <div className="mobile-item col-xs-6 col-sm-6 col-md-3">
         <div className="product-wrapper">
           <a href={"/ProductDetail/" + this.props.phone.id}>
             <img
               className="product-img"
-              src={"/images/mobiles/" + this.props.phone.img}
+              src="https://dummyimage.com/250x400/f9f9f9/999.jpg"
               alt="imae xfzbdzgctzrv"
             />
           </a>
         </div>
         <div className="caption text-center">
           <p className="mobile-name">{this.props.phone.name}</p>
-          <p className="mobile-price">
-            {renderHTML(this.pricer(this.props.phone))}
-          </p>
-          <p className="mobile-config">{this.props.phone.cnadv}</p>
-          <p className="mobile-config">{this.props.phone.config}</p>
+          <p className="mobile-price">{this.props.phone.price}</p>
+
           <button type="button" className="btn btn-warning cartbtn">
             Add to Cart{" "}
           </button>

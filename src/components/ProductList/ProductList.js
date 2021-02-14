@@ -45,7 +45,7 @@ export default class ProductList extends Component {
   render() {
     return (
       <Fragment>
-        <Banner></Banner>
+        <Banner />
         <div className="container">
           <h3 className="text-center">{Labels.MNL}</h3>
           <p className="disclaimer text-center">

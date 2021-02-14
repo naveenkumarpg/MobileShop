@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../ProductDetail/ProductDetail.css";
+import "../ProductDetail/ProductDetail.scss";
 
 export default class ProductDetail extends Component {
   constructor(props) {
@@ -36,15 +36,15 @@ export default class ProductDetail extends Component {
 
     return (
       <div className="container">
-        <div className="thumbnail product-detail-wrapper">
-          <div className="col-sm-12 col-md-6 text-center">
+        <div className="thumbnail product-detail-wrapper row">
+          <div className="col-md-6 text-center">
             <img
               className="product-img"
-              src={"/images/mobiles/" + this.state.mobile.img}
+              src="https://dummyimage.com/300x500/f9f9f9/999.jpg"
               alt="imae xfzbdzgctzrv"
             />
           </div>
-          <div className="col-sm-12 col-md-6">
+          <div className="col-md-6">
             <div className="caption">
               <h2>{this.state.mobile.name}</h2>
               <p className="mobile-price">{this.state.mobile.price}</p>
