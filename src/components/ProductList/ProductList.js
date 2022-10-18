@@ -1,24 +1,24 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment } from 'react';
 
-import "../ProductList/ProductList.css";
+import '../ProductList/ProductList.css';
 
-import Product from "../Product/Product";
-import Banner from "../Banner/Benner";
+import Product from '../Product/Product';
+import Banner from '../Banner/Benner';
 
-import Labels from "../../Labels/labels";
+import Labels from '../../Labels/labels';
 
 export default class ProductList extends Component {
   constructor(props) {
     super(props);
     this.state = {
       mobiles: [],
-      length: 0,
+      length: 0
     };
   }
 
   componentDidMount() {
     const fetchPhonesData = new Promise(function (resolve, reject) {
-      fetch("http://localhost:3001/mobiles?_page=1&_limit=18")
+      fetch('http://localhost:3001/mobiles?_page=1&_limit=18')
         .then((data) => {
           return data.json();
         })
@@ -30,7 +30,7 @@ export default class ProductList extends Component {
     fetchPhonesData.then((data) => {
       this.setState({
         mobiles: data,
-        length: data.length,
+        length: data.length
       });
     });
   }

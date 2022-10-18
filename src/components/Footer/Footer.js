@@ -1,16 +1,11 @@
-import React, { Component } from "react";
-import renderHTML from "react-render-html";
+import React, { Component } from 'react';
+import './Footer.scss';
 
-import "./Footer.scss";
-
-import Labels from "../../Labels/labels";
 class Footer extends Component {
   render() {
     return (
       <footer className="component footer">
-        <div className="container text-center">
-          {renderHTML(Labels.disclaimer)}
-        </div>
+        <div className="container text-center">disclaimer</div>
       </footer>
     );
   }

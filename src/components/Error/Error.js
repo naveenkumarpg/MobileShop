@@ -1,9 +1,5 @@
-import React, { Component } from "react";
-import "../Error/Error.css";
-
-import "../Cart/Cart.css";
-
-import Labels from "../../Labels/labels";
+import React, { Component } from 'react';
+import Labels from '../../Labels/labels';
 
 export default class Default extends Component {
   render() {

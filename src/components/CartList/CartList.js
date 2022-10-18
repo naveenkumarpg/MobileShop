@@ -1,7 +1,5 @@
-import React, { Component } from "react";
+import React from 'react';
 
-export default class CartList extends Component {
-  render() {
-    return <div className="container">Cart View.</div>;
-  }
+export default function CartList() {
+  return <div className="container">Cart View.</div>;
 }
